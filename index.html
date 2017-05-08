@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="QX">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="scripts/angular.js"></script>
     <script src="scripts/angular-route.js"></script>
     <script src="scripts/jquery-3.2.1.js"></script>
-    <script src="scripts/materialize.js"></script>
+    <script src="js/materialize.js"></script>
     <link href="css/materialize.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <script src="script.js"></script>
     <title>QX</title>
 </head>
 <body>
-    <div ng-controller="myController">
-    </div>
     <table>
       <tr>
         <td colspan="2" class="header">
@@ -24,8 +20,8 @@
       <tr>
         <td class="leftMenu">
           <a href="#/home">Home</a>
-          <a href="#/page2">Page 2</a>
-          <a href="#/page3">Page 3</a>
+          <a href="#/pageTwo">Page 2</a>
+          <a href="#/pageThree">Page 3</a>
         </td>
         <td class="mainContent">
           <ng-view></ng-view>
