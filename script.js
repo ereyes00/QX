@@ -1,4 +1,4 @@
-var app = angular.module('QX', ['ngRoute'])
+var app = angular.module('myApp', ['ngRoute'])
   .config(function($routeProvider) {
      $routeProvider
        .when('/home', {
