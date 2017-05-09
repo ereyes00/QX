@@ -2,13 +2,15 @@
 The Agile Development Tool
 Getting Started
 
-How this project came to be ?
+#How this project came to be ?
 https://medium.com/@gregborrelly/my-journey-from-sales-to-becoming-a-full-stack-web-developer-af5974611b59
-Cloning The Repo 
 
-  1.Start by creating a fork of the Repository : https://github.com/QuixoticOS/QX
 
-  2. After you create a fork, download your local copy, work on your copy, once your work is ready, go to github and create a pull request. 	
+#Cloning The Repo 
+
+1.Start by creating a fork of the Repository : https://github.com/QuixoticOS/QX
+
+2. After you create a fork, download your local copy, work on your copy, once your work is ready, go to github and create a pull request. 	
 
 #Setting up your local  Server: 
 In order to minimize complexity at this stage, we are going to be setting up a simple http-server ( hold your horses, we can complicate things later, trust me)
