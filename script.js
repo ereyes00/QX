@@ -13,6 +13,10 @@ var app = angular.module('myApp', ['ngRoute'])
           templateUrl: 'components/pageThree/pageThree.html',
           controller: 'pageThreeController'
        })
+       .when('/login-page', {
+          templateUrl: 'components/login-page/login.html',
+          controller: 'login-pageController'
+       })
        .otherwise({
           redirectTo: '/'
        })
