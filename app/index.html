@@ -11,12 +11,9 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="app/bower_components/angular/angular.min.js"></script>
-    <script src="app/bower_components/angular-route/angular-route.min.js"></script>
-    <script src="app/main-module.js"></script>
-    <script src="app/main-module-routes.js"></script>
-    <script src="app/scripts/controllers/main.js"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500" rel="stylesheet">
     <!-- endbuild -->
   </head>
   <body ng-app="qxApp">
@@ -25,35 +22,140 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+     <nav class="navbar navbar-inverse navbar-static-top customized-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right customized-header">
+            <li><a href="../navbar/">Default</a></li>
+            <li class="">
+              <a href="./">Static top <span class="sr-only">(current)</span></a>
+              </li>
 
-            <a class="navbar-brand" href="#/">qx</a>
-          </div>
 
-          <div class="collapse">
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
+
+    
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron text-center customized-jumbotron">
+        <img src="./images/time.svg" alt="time" class="time">
+        <h1>Navbar example</h1>
+        <p>Parse, validate, manipulate, and display dates and times in JavaScript.</p>
+       
+      </div>
+
+      <br>
+      <br>
+      
+     
+     
+      <!-- table -->
+      <div class="container">
+        <div class="text-center">
+        <h2>Sample code</h2>
+        </div>
+         <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <pre>
+              <code class="language-html">
+    
+&#x3C;table class=&#x22;table&#x22;&#x3E;
+  &#x3C;thead&#x3E;
+    &#x3C;tr&#x3E;
+      &#x3C;th&#x3E;#&#x3C;/th&#x3E;
+      &#x3C;th&#x3E;First Name&#x3C;/th&#x3E;
+      &#x3C;th&#x3E;Last Name&#x3C;/th&#x3E;
+      &#x3C;th&#x3E;Username&#x3C;/th&#x3E;
+    &#x3C;/tr&#x3E;
+  &#x3C;/thead&#x3E;
+  &#x3C;tbody&#x3E;
+    &#x3C;tr&#x3E;
+      &#x3C;th scope=&#x22;row&#x22;&#x3E;1&#x3C;/th&#x3E;
+      &#x3C;td&#x3E;Mark&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;Otto&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;@mdo&#x3C;/td&#x3E;
+    &#x3C;/tr&#x3E;
+    &#x3C;tr&#x3E;
+      &#x3C;th scope=&#x22;row&#x22;&#x3E;2&#x3C;/th&#x3E;
+      &#x3C;td&#x3E;Jacob&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;Thornton&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;@fat&#x3C;/td&#x3E;
+    &#x3C;/tr&#x3E;
+    &#x3C;tr&#x3E;
+      &#x3C;th scope=&#x22;row&#x22;&#x3E;3&#x3C;/th&#x3E;
+      &#x3C;td&#x3E;Larry&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;the Bird&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;@twitter&#x3C;/td&#x3E;
+    &#x3C;/tr&#x3E;
+  &#x3C;/tbody&#x3E;
+&#x3C;/table&#x3E;        
+            
+              </code>
+            </pre>
           </div>
         </div>
-      </div>
-    </div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+      </div> <!-- end of container -->
+      
+    <br>
+    <br>
 
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
+      <!-- footer -->
+      <footer class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p class="text-muted">Place sticky footer content here.</p>
       </div>
-    </div>
+    </footer>
+     
+
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -73,7 +175,12 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-
+         <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+         <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./bower_components/angular/angular.min.js"></script>
+        <script src="./bower_components/angular-route/angular-route.min.js"></script>
+        <script src="./bower_components/angular-route/angular-route.min.js"></script>
+        <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>
